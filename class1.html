@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+            "head head head"
+            "main main main"
+            "event1 event1 event1"
+            "event2 event2 event2"
+            "testimonial testimonial testimonial"
+            "footer footer footer";
+            padding:10px;
+            border: 2px solid black;
+        }
+        #head{
+            grid-area:head;
+            background-color: aqua;
+            background-repeat:no-repeat ;
+            background-size: 150px 150px;
+            border-radius: 20px;
+            
+        }
+        
+        #main{
+            grid-area:main;
+            display: grid;
+            grid-template-areas: 
+            "ms1 ms1 ma1"
+            "ms2 ms2 ma1";
+        }
+        
+        #event1{
+            grid-area:event1;
+            display: grid;
+            grid-template-areas: 
+            "ms1 ms1 ma1"
+            "ms2 ms2 ma1";
+        }
+        #event2{
+            grid-area:event2;
+            display: grid;
+            grid-template-areas: 
+            "ms1 ms1 ma1"
+            "ms2 ms2 ma1";
+        }
+        #testimonial{
+            grid-area:testimonial;
+        }
+        #footer{
+            grid-area:footer;
+        }
+        .container > div{
+            border: 2px solid rgb(0, 255, 255);;
+            margin: 5px;
+        }
+        #main > div{
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #event1 > div{
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #event2 > div{
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .ms1{
+            grid-area:ms1;
+        }
+        .ms2{
+            grid-area:ms2;
+        }
+        .ma1{
+            grid-area:ma1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="head" >
+            <center><h1>Online Portal</h1></center><img src="image2.png" usemap="class" width="60" height="60" align="right">
+            
+        </div>
+
+        <div id="main">
+            <div class="ms1">ms1</div>
+            <div class="ms2">ms2</div>
+            <div class="ma1">ma1</div>
+        </div>
+        <div id="event1">
+            <div class="ms1">ms1</div>
+            <div class="ms2">ms2</div>
+            <div class="ma1">ma1</div>
+        </div>
+        <div id="event2">
+            <div class="ms1">ms1</div>
+            <div class="ms2">ms2</div>
+            <div class="ma1">ma1</div>
+        </div>
+        <div id="testimonial">t</div>
+        <div id="footer">f</div>
+    </div>
+     <map name="class">
+        <area shape="rect" coords="100,700,333,250" alt="mobile" href="personal.html">
+        <area shape="circle" coords="140,200,44" alt="Cup of coffee" href="coffee.html">
+        <area shape="circle" coords="300,190,44" alt="Naruto" href="mobile.html">
+        <area shape="circle" coords="190,70,44" alt="Education" href="education.html">
+      </map>
+    
+</body>
+</html>

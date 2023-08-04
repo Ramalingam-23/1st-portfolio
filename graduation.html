@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:dodgerblue;
+        }
+        .header{
+            grid-area: header;
+        }
+        .main{
+            grid-area: main;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .menu{
+            grid-area: menu;
+            border:-5px solid black;
+        }
+        .divcontainer{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'menu main main'
+            'menu footer footer';
+            background-color:palevioletred;
+        }
+        .divcontainer div{
+            padding: 20px;
+            border:4px solid black;
+            background-color: whitesmoke;
+            margin:20px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+    </style>
+</head>
+<body>
+    <div class="divcontainer">
+        <div class="header" style="background-color:dodgerblue;"><ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="personal.html">Contact</a></li>
+            <li><a href="education.html">About</a></li>
+          </ul></div>
+          <div class="main" style="background-color:palegreen;">
+        <div class="menu" style="background-color:palegreen;">
+            <img src="Capture.PNG" alt="Graduation" usemap="#Graduation" width="400" height="379">
+        </div>
+        <div class="footer" style="background-color:DodgerBlue;"> 
+            <h2>Completed Course</h2>           
+            <ul><b>
+              <li>SKILLEDGE - CLOUD DEVELOPMENT</li><br>
+              <li>NPTEL - CLOUD SECURITY</li><br>
+              <li>NPTEL - TECHNICAL ENGLISH</li><br>
+              <li>CYBERSECURITY ESSENTIALS</li><br>
+              <li>INFOSYS|SPRINGBOARD - HTML5</li><br>
+              <li>INFOSYS|SPRINGBOARD - CSS</li>
+            </b></ul></div>
+    </div>
+    <map name="Graduation">
+        <area shape="rect" coords="100,700,333,250" alt="mobile" href="personal.html">
+        <area shape="circle" coords="140,200,44" alt="Cup of coffee" href="coffee.html">
+        <area shape="circle" coords="300,190,44" alt="Naruto" href="mobile.html">
+        <area shape="circle" coords="190,70,44" alt="Education" href="education.html">
+      </map>
+      
+</body>
+</html>
